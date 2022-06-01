@@ -76,3 +76,8 @@ gem "slim", "~> 4.1"
 gem "slim-rails", "~> 3.5"
 
 gem "devise", "~> 4.8"
+
+gem "rails_admin", "~> 3.0"
+gem "sassc-rails"
+
+gem "rolify", "~> 6.0"
