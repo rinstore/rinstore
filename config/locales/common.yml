@@ -3,9 +3,13 @@ en:
     art: Art
     dreads: Dreads
     home: For home
+    sign_in: Sign in
+    sign_out: Sign out
 
 ru:
   nav:
     art: Арт
     dreads: Дреды
     home: Для дома
+    sign_in: Войти
+    sign_out: Выйти
