@@ -18,3 +18,8 @@
 .m-left-10px {
     margin-left: 10px
 }
+
+.reset-offsets {
+    padding: 0;
+    margin: 0;
+}
