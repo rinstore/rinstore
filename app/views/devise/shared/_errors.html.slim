@@ -3,3 +3,11 @@
     - flash.each do |k, v|
       div class="alert alert-danger"
         = v
+
+- if resource.errors.any?
+    div id="error_explanation"
+    h2
+    ul
+      - resource.errors.full_messages.each do |message|
+        li
+          = message
