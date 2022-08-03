@@ -1,7 +1,17 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class ItemsControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  setup do
+    @items = items(:two)
+  end
+
+  test 'the index' do
+    get '/'
+    assert_response :success
+  end
+
+  test 'test_pagination' do
+  end
 end

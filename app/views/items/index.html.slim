@@ -1,2 +1,9 @@
 div
-  | abc
+  - @pager.models.each do |item|
+    = item.name
+    = item.description
+
+- if @pager.many_pages?
+  div
+    - (1..@pages).each do |p|
+      = p
