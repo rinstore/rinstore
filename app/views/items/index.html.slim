@@ -1,9 +1,13 @@
-div
-  - @pager.models.each do |item|
-    = item.name
-    = item.description
+div class="container"
+  div class="row row-cols-md-4"
+    - @pager.models.each do |item|
+      div class="col text-center mb-5"
+        div class="card"
+          - item_info = item.info
+          = image_tag(item.cover.url, class: "card-img-top")
+          = item_info.name
+    
+  - if @pager.many_pages?
+    div class="row"
+      = render "layouts/pagination"
 
-- if @pager.many_pages?
-  div
-    - (1..@pages).each do |p|
-      = p

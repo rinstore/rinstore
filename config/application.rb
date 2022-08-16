@@ -21,5 +21,14 @@ module Rinstore
     config.items_pagination = {
       items_per_page: 12
     }
+
+    config.item_image_cover = {
+      empty_image_url: "https://dummyimage.com/300.png/09f/fff",
+      empty_image_name: "No cover item"
+    }
+    config.item_description = {
+      empty_item_name: -> { I18n.t(:empty_item_name) },
+      empty_item_description: -> { I18n.t(:empty_item_description) }
+    }
   end
 end

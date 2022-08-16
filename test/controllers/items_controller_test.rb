@@ -11,7 +11,4 @@ class ItemsControllerTest < ActionDispatch::IntegrationTest
     get '/'
     assert_response :success
   end
-
-  test 'test_pagination' do
-  end
 end

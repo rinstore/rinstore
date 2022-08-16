@@ -24,3 +24,26 @@ Role.create(
 Role.create(
   name: :user
 )
+
+user = User.create!(
+  email: "test@email.com",
+  password: "testpassword",
+  password_confirmation: "testpassword"
+)
+
+40.times do |i|
+  item = Item.create!(user: user)
+  item_info = ItemInfo.create!(
+    name: "Item#{i}",
+    description: "Description for Item#{i}",
+    lang: :en,
+    item: item
+  )
+
+  item_info = ItemInfo.create!(
+      name: "Товар#{i}",
+      description: "Описание для Товар#{i}",
+      lang: :ru,
+      item: item
+    )
+end

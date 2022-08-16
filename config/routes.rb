@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   #
   root 'items#index'
   get 'locale_switch', to: 'locales#switch'
+  get '/page/:page', to: 'items#index'
 end
+
